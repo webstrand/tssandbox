@@ -1,0 +1,11 @@
+{
+  "spec_dir": "tsc",
+  "spec_files": [
+    "**/*[sS]pec.ts"
+  ],
+  "helpers": [
+    "**/init.ts"
+  ],
+  "stopSpecOnExpectationFailure": false,
+  "random": true
+}
