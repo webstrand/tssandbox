@@ -13,8 +13,8 @@
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly",
-    "State": "writeable",
-    "setup": "writeable"
+    "State": "writable",
+    "setup": "writable"
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
