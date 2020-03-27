@@ -4,7 +4,7 @@
     "**/*[sS]pec.ts"
   ],
   "helpers": [
-    "../node_modules/ts-node/register/type-check.js",
+    "../spec/support/type-check.js",
     "**/init.ts"
   ],
   "stopSpecOnExpectationFailure": false,
