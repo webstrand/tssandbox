@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 type CareActivities = 'Converse' | 'Play' | 'Touch' | 'Chores';
 
 interface TwineSetup {
