@@ -16,11 +16,6 @@
     "State": "writable",
     "setup": "writable"
   },
-  "parser": "@typescript-eslint/parser",
-  "parserOptions": {
-    "ecmaVersion": 2018,
-    "project": "./tsconfig.json"
-  },
   "plugins": ["@typescript-eslint", "testcafe"],
   "rules": {
     "quotes": ["off"],
@@ -28,10 +23,21 @@
   },
   "overrides": [
     {
+      "files": [ "rollup.config.js" ],
+      "parserOptions": {
+        "sourceType": "module"
+      }
+    },
+    {
       "files": [ "**/*.ts", "**/*.tsx" ],
       "extends": [
         "plugin:@typescript-eslint/recommended"
       ],
+      "parser": "@typescript-eslint/parser",
+      "parserOptions": {
+        "ecmaVersion": 2018,
+        "project": "./tsconfig.json"
+      },
       "rules": {
         "@typescript-eslint/no-empty-function": ["off"],
         "@typescript-eslint/camelcase": ["off"],
