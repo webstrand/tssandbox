@@ -1,7 +1,7 @@
-console.log('prod');
+import { State } from "./state";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as _ from "lodash";
 
-declare const _: typeof import('lodash');
-
-setup.initializeDay = (): void => {
+export function initializeDay(): void {
   State.variables.daily_ap = 0;
-};
+}

@@ -1,13 +1,9 @@
-/* eslint-disable @typescript-eslint/no-non-null-assertion */
 import 'jasmine';
-import './prod.ts';
-import './monsters.ts';
-import * as _ from 'lodash'; // Imported so the production code can use it
+import { setup } from "./setup";
+import { State } from "./state";
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import * as _ from 'lodash';
 
-console.log('spec');
-
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-(window as any)._ = _;
 describe('Main', () => {
   describe('initializeDay()', () => {
     it('should initialize variables', () => {

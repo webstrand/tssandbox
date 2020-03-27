@@ -2,12 +2,15 @@
   "version": "1.0.0",
   "main": ".webpack/main",
   "scripts": {
-    "compile-typescript": "tsc && cp tscbuild/mgf.js story/ && cp tscbuild/monsters.js story/",
+    "compile-typescript": "tsc && rollup -c",
     "lint": "eslint tsc/** --fix",
-    "test": "echo \"lint\" && npm run lint && echo \"unit tests\" && ts-node node_modules/jasmine/bin/jasmine && echo \"compile ts\" && npm run compile-typescript"
+    "test": "echo \"lint\" && npm run lint && echo \"unit tests\" && jasmine && echo \"compile ts\" && npm run compile-typescript"
   },
   "keywords": [],
   "devDependencies": {
+    "@rollup/plugin-alias": "^3.0.1",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
     "@types/jasmine": "^3.5.9",
     "@types/lodash": "^4.14.149",
     "@types/node": "^13.9.1",
@@ -18,6 +21,7 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-testcafe": "^0.2.1",
     "jasmine": "^3.5.0",
+    "rollup": "^2.2.0",
     "testcafe": "^1.8.2",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.0"

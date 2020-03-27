@@ -4,6 +4,7 @@
     "**/*[sS]pec.ts"
   ],
   "helpers": [
+    "../spec/support/type-check.js",
     "**/init.ts"
   ],
   "stopSpecOnExpectationFailure": false,
