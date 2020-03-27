@@ -1,11 +1,7 @@
 import 'jasmine';
-import './prod.ts';
-import './monsters.ts';
-import * as _ from 'lodash'; // Imported so the production code can use it
-
-console.log('spec');
-
-(window as unknown as { _: typeof _ })._ = _;
+import { setup } from "./setup";
+import { State } from "./state";
+import * as _ from 'lodash';
 
 describe('Main', () => {
   describe('initializeDay()', () => {

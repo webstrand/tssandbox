@@ -1,7 +1,6 @@
-console.log('prod');
+import { State } from "./state";
+import * as _ from "lodash";
 
-declare const _: typeof import('lodash');
-
-setup.initializeDay = (): void => {
+export function initializeDay(): void {
   State.variables.daily_ap = 0;
-};
+}
