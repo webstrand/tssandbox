@@ -4,7 +4,7 @@
   "scripts": {
     "compile-typescript": "tsc && cp tscbuild/mgf.js story/ && cp tscbuild/monsters.js story/",
     "lint": "eslint tsc/** --fix",
-    "test": "echo \"lint\" && npm run lint && echo \"unit tests\" && ts-node node_modules/jasmine/bin/jasmine && echo \"compile ts\" && npm run compile-typescript"
+    "test": "echo \"lint\" && npm run lint && echo \"unit tests\" && jasmine && echo \"compile ts\" && npm run compile-typescript"
   },
   "keywords": [],
   "devDependencies": {
